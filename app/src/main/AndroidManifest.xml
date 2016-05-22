@@ -18,7 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MyViewActivity"></activity>
+        <activity android:name=".MyViewActivity" />
+        <activity android:name=".refreshview.RefreshActivity"></activity>
     </application>
 
 </manifest>
