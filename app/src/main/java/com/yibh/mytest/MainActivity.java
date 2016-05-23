@@ -25,8 +25,6 @@ public class MainActivity extends AppCompatActivity
 
 
         /***************************************************/
-//        Button torefresh= (Button) findViewById(R.id.torefresh);
-//        Button quan= (Button) findViewById(R.id.quan);
         findViewById(R.id.torefresh).setOnClickListener(this);
         findViewById(R.id.quan).setOnClickListener(this);
 
