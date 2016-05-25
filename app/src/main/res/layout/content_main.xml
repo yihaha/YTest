@@ -19,4 +19,21 @@
         android:layout_height="wrap_content"
         android:text="优惠券View" />
 
+    <Button
+        android:id="@+id/sort_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="排序算法" />
+
+    <Button
+        android:id="@+id/viewpager_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="轮播条" />
+    <Button
+        android:id="@+id/viewpager_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="轮播条1" />
+
 </LinearLayout>

@@ -19,7 +19,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".MyViewActivity" />
-        <activity android:name=".refreshview.RefreshActivity"></activity>
+        <activity android:name=".refreshview.RefreshActivity" />
+        <activity android:name=".ServiceActivity" />
+        <activity android:name=".SortActivity" />
+        <activity android:name=".BannerActivity" />
+        <activity android:name=".BannerActivity1"></activity>
     </application>
 
 </manifest>

@@ -1,5 +1,6 @@
 package com.yibh.mytest;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -27,7 +28,9 @@ public class MainActivity extends AppCompatActivity
         /***************************************************/
         findViewById(R.id.torefresh).setOnClickListener(this);
         findViewById(R.id.quan).setOnClickListener(this);
-
+        findViewById(R.id.sort_view).setOnClickListener(this);
+        findViewById(R.id.viewpager_view).setOnClickListener(this);
+        findViewById(R.id.viewpager_view1).setOnClickListener(this);
 
         /***************************************************/
 
@@ -122,6 +125,18 @@ public class MainActivity extends AppCompatActivity
             case R.id.quan:
 
                 startActivity(MyViewActivity.getNewIntetnt(MainActivity.this));
+                break;
+            case R.id.sort_view:
+
+                startActivity(new Intent(MainActivity.this,SortActivity.class));
+                break;
+            case R.id.viewpager_view:
+
+                startActivity(new Intent(MainActivity.this,BannerActivity.class));
+                break;
+            case R.id.viewpager_view1:
+
+                startActivity(new Intent(MainActivity.this,BannerActivity1.class));
                 break;
         }
 
