@@ -67,6 +67,8 @@ public class YRollViewpager extends ViewPager {
      * 开始轮播
      */
     public void startRollPage() {
+        /** 先移除消息,保证最多只有一个消息 */
+        mHandler.removeMessages(0);
         mHandler.sendEmptyMessageDelayed(0, mLimitTime);
     }
 
@@ -147,12 +149,33 @@ public class YRollViewpager extends ViewPager {
         }
     }
 
-    //    从界面移出的时候会调用方法
+//    //    从界面移出的时候会调用方法
+//    @Override
+//    public void onDetachedFromWindow() {
+//        super.onDetachedFromWindow();
+//        //移除所有的任务
+//        mHandler.removeCallbacksAndMessages(null);
+//    }
+
     @Override
-    public void onDetachedFromWindow() {
-        super.onDetachedFromWindow();
-        //移除所有的任务
-        mHandler.removeCallbacksAndMessages(null);
+    protected void onWindowVisibilityChanged(int visibility) {
+        super.onWindowVisibilityChanged(visibility);
+        switch (visibility) {
+            case VISIBLE:
+                startRollPage();
+
+                break;
+
+            case INVISIBLE:
+            case GONE:
+                stopRollPage();
+
+                break;
+        }
+    }
+
+   public void stopRollPage() {
+        mHandler.removeMessages(0);
     }
 
     public interface OnpageItemClickListener {
