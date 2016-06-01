@@ -7,6 +7,14 @@
     android:gravity="center"
     android:orientation="vertical">
 
+    <com.yibh.mytest.view.TextLine
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="$100"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp" />
+
     <Button
         android:id="@+id/torefresh"
         android:layout_width="wrap_content"
@@ -30,6 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="轮播条" />
+
     <Button
         android:id="@+id/viewpager_view1"
         android:layout_width="wrap_content"
