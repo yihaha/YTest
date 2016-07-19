@@ -5,7 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:background="@android:color/black"
     android:orientation="vertical">
+
+    <!--代码中动态添加TextView两边没有渐变效果-->
+    <com.yibh.mytest.view.MarqueeTextView
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:textColor="@android:color/white"
+        android:singleLine="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:text="我就是来测试一下滚动的效果的" />
 
     <com.yibh.mytest.view.TextLine
         android:layout_width="wrap_content"
