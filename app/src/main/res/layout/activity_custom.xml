@@ -1,16 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_custom"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
-    android:orientation="vertical">
+    >
 
-    <com.yibh.mytest.customview.RoundView
-        android:id="@+id/roundview"
+    <LinearLayout
+
+        android:id="@+id/activity_custom"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
 
-</LinearLayout>
+        <com.yibh.mytest.customview.RoundView
+            android:id="@+id/roundview"
+            android:layout_width="@dimen/px300"
+            android:layout_height="@dimen/px300"/>
+
+        <com.yibh.mytest.customview.TestView
+            android:id="@+id/testview"
+            android:layout_width="@dimen/px500"
+            android:layout_height="@dimen/px500"
+            android:layout_marginTop="15dp"/>
+
+        <com.yibh.mytest.customview.CheckView
+            android:id="@+id/checkview"
+            android:layout_width="@dimen/px400"
+            android:layout_height="@dimen/px400"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="startCheckView"
+                android:text="开始"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="stopCheckView"
+                android:text="停止"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
