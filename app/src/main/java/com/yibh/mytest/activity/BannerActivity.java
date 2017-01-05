@@ -1,4 +1,4 @@
-package com.yibh.mytest;
+package com.yibh.mytest.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.yibh.mytest.R;
 import com.yibh.mytest.view.YRollViewpager;
 
 public class BannerActivity extends AppCompatActivity {

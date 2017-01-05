@@ -31,6 +31,14 @@
             android:onClick="subClick"
             android:text=".sub字幕"/>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/video_bt_selector"
+            android:onClick="assClick"
+            android:text=".ass字幕"/>
+
 
     </LinearLayout>
 

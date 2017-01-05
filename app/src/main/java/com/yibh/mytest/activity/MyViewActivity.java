@@ -1,9 +1,11 @@
-package com.yibh.mytest;
+package com.yibh.mytest.activity;
 
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.yibh.mytest.R;
 
 public class MyViewActivity extends AppCompatActivity {
 

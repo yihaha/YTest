@@ -1,8 +1,11 @@
-package com.yibh.mytest;
+package com.yibh.mytest.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.yibh.mytest.R;
+import com.yibh.mytest.SortTest;
 
 public class SortActivity extends AppCompatActivity {
 

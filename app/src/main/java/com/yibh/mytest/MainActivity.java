@@ -14,6 +14,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.yibh.mytest.activity.BannerActivity;
+import com.yibh.mytest.activity.BannerActivity1;
+import com.yibh.mytest.activity.MyViewActivity;
+import com.yibh.mytest.activity.SortActivity;
 import com.yibh.mytest.refreshview.RefreshActivity;
 
 public class MainActivity extends AppCompatActivity

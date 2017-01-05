@@ -20,7 +20,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".CDTestActivity"
+            android:name=".customview.CustomActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -29,17 +29,23 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".MyViewActivity"/>
+        <activity android:name=".activity.MyViewActivity"/>
         <activity android:name=".refreshview.RefreshActivity"/>
-        <activity android:name=".ServiceActivity"/>
-        <activity android:name=".SortActivity"/>
-        <activity android:name=".BannerActivity"/>
-        <activity android:name=".BannerActivity1"/>
+        <activity android:name=".activity.ServiceActivity"/>
+        <activity android:name=".activity.SortActivity"/>
+        <activity android:name=".activity.BannerActivity"/>
+        <activity android:name=".activity.BannerActivity1"/>
         <activity android:name=".MainActivity">
         </activity>
         <activity android:name=".greendaotest.GreenDaoActivity">
         </activity>
+        <activity android:name=".activity.CDTestActivity">
+        </activity>
         <activity android:name=".videoplayertest.VideoPlayerActivity">
+        </activity>
+        <activity android:name=".videoplayertest.VideoPlayerActivity2">
+        </activity>
+        <activity android:name=".videoplayertest.VideoPlayerActivity1">
         </activity>
     </application>
 

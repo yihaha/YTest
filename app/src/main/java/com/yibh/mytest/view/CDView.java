@@ -18,7 +18,7 @@ import com.yibh.mytest.utils.BitmapUtil;
 
 /**
  * Created by yibh on 2016/12/16.
- * 听过旋转动画貌似会有噪点
+ * 通过旋转动画貌似会有噪点
  */
 
 public class CDView extends View {

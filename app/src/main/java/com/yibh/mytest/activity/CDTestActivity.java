@@ -1,4 +1,4 @@
-package com.yibh.mytest;
+package com.yibh.mytest.activity;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.yibh.mytest.R;
 import com.yibh.mytest.view.CDView;
 
 public class CDTestActivity extends AppCompatActivity {
